@@ -67,15 +67,13 @@ def start(message):
     bot.send_message(message.from_user.id, 'Для регистрации напишите /reg')
 
 
-class userData:
-    user_id = ""
-    user_name = ""
+class UserData:
     first_name = ""
     last_name = ""
     email = ""
 
 
-data = userData()
+data = UserData()
 
 
 @bot.message_handler(commands=['reg'])
